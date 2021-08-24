@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from "react";
+
+
+import Table from "./component/table.js";
+import "./App.css";
 
 function App() {
+  const[show, setShow]= useState(false);
+  const showuser = () => {
+    setShow(true);
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <section>
+          <div class="navbars">
+            <a href="#home" className="zippytext">ZIPPY</a>
+            <a href="#users" className="getuser" onClick={showuser}>
+              <button className="btn">Get Users</button>
+            </a>
+          </div>
+          {show ? <Table></Table> : ""}
+        </section>
+    </>
   );
 }
 

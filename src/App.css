@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+.navbars {
+  height: 11vh;
+  background-color: red;
+  font-weight: bold;
+  color: #f2f2f2;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Navbar Text Zippy*/
+.zippytext{
+  font-size: 2rem;
+  margin-left: 4vw;
+  padding-top: 1.5vh;
+  text-decoration: none;
+  color: #f2f2f2;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.zippytext:hover{
+  color: black;
+}
+.getuser{
+  padding: 5px;
+}
+/* Navbar Button Get User */
+.navbars .btn {
+  float: right;
   color: white;
+  margin-right: 6%;
+  font-size: 2rem;
+  background-color: red;
+  border: black;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbars .btn:hover {  
+  border-radius: 5px;
+  border: black;
+  color: white;
+  background-color: black;
 }
